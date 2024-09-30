@@ -9,9 +9,9 @@ end)
 
 -- Configure LSP servers
 
-lsp_zero.setup_servers({'tsserver', 'sourcekit', 'ruby_lsp', 'lua_ls', 'eslint'})
+lsp_zero.setup_servers({'ts_ls', 'sourcekit', 'ruby_lsp', 'lua_ls', 'eslint'})
 
-lsp_zero.configure('tsserver', {
+lsp_zero.configure('ts_ls', {
   on_attach = require'lsp_compl'.attach
 })
 
