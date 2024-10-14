@@ -7,6 +7,7 @@ vim.cmd("colorscheme kanagawa")
 
 -- Fastlane associations
 vim.cmd[[au BufNewFile,BufRead Fastfile set syntax=ruby]]
+vim.cmd[[au BufNewFile,BufRead *.Fastfile set syntax=ruby]]
 vim.cmd[[au BufNewFile,BufRead Appfile set syntax=ruby]]
 vim.cmd[[au BufNewFile,BufRead Gymfile set syntax=ruby]]
 vim.cmd[[au BufNewFile,BufRead Matchfile set syntax=ruby]]
