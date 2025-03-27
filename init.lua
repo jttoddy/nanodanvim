@@ -3,8 +3,6 @@ require("config.lspzero-postconfig")
 
 vim.wo.relativenumber = true
 
-vim.cmd("colorscheme kanagawa")
-
 -- Fastlane associations
 vim.cmd[[au BufNewFile,BufRead Fastfile set syntax=ruby]]
 vim.cmd[[au BufNewFile,BufRead *.Fastfile set syntax=ruby]]
