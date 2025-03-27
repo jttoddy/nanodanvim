@@ -9,7 +9,7 @@ end)
 
 -- Configure LSP servers
 
-lsp_zero.setup_servers({'ts_ls', 'sourcekit', 'ruby_lsp', 'lua_ls', 'eslint'})
+lsp_zero.setup_servers({'ts_ls', 'sourcekit', 'ruby_lsp', 'lua_ls', 'eslint', 'kotlin_language_server'})
 
 lsp_zero.configure('ts_ls', {
   on_attach = require'lsp_compl'.attach
@@ -34,4 +34,8 @@ lsp_zero.configure('eslint', {
       command = "EslintFixAll",
     })
   end,
+})
+
+lsp_zero.configure('kotlin_language_server', {
+  on_attach = require'lsp_compl'.attach
 })
