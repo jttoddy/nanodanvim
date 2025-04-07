@@ -67,7 +67,7 @@ return {
             enabled = true,
             -- from 0 to 1
             -- as nearer to 1 the dimming will be lighter
-            level = 0.48,
+            level = 0.9,
 
             -- Prevent dimming the last active window when switching to a window
             -- with specific filetypes or buftypes listed in the excluded table.
